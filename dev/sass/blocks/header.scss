@@ -1,0 +1,39 @@
+.header {
+    padding: 12px 0;
+    background-color: #282a2d;
+    /* header__inner */
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    /* header__logo */
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 41px;
+        height: 56px;
+        margin: 0 21px 0 8px;
+    }
+    /* header__title */
+    &__title {
+        margin: 5px 0 4px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+    }
+    /* header__subtitle */
+    &__subtitle {
+        @include nb;
+        color: #ebf4ff;
+        opacity: 0.25;
+        font-size: 11px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 16px;
+    }
+}

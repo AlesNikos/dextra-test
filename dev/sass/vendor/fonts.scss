@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NewBaskervilleC';
+    src: url('../fonts/NewBaskervilleC.woff2') format('woff2'),
+        url('../fonts/NewBaskervilleC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@mixin nb {
+    font-family: 'NewBaskervilleC', serif;
+}
+
+@mixin pt {
+    font-family: 'PT Sans', sans-serif;
+}

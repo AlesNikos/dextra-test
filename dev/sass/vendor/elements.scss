@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @include nb;
+    background-color: #eff2f7;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1290px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+    padding: 61px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.col-12 {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+}
+.col-sm-6 {
+    @media(min-width: 576px) {
+        position: relative;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.col-md-3 {
+    @media(min-width: 768px) {
+        position: relative;
+        flex: 0 0 25%;
+        max-width: 25%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.col-lg-6 {
+    @media(min-width: 992px) {
+        position: relative;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+
+.col-md-4 {
+    position: relative;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.col-3 {
+    @media(min-width: 992px) {
+        position: relative;
+        flex: 0 0 25%;
+        max-width: 25%;
+        width: 100%;
+        padding: 0 10px;
+
+    }
+}
+
+.order {
+    @media(max-width: 991px) {
+        order: -1;
+
+    }
+}
+.lg-backdrop {
+    background-color: #141a1f;
+    &.in {
+        opacity: 0.9;
+
+    }
+}
+.lg-download {
+    display: none;
+}
+.lg-fullscreen {
+    display: none;
+}
+.lg-close-custom {
+    position: absolute;
+    top: -34px;
+    right: 15px;
+    background: url('../../icons/icon_close.svg') no-repeat center;
+    width: 28px;
+    height: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.lg-close {
+    &.lg-icon {
+        display: none;
+    }
+} 
+.lg-outer {
+    .lg-img-wrap {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 480px;
+        max-width: 740px;
+    }
+} 
+
+.lg-video-cont {
+    position: relative;
+    .lg-close-custom {
+        right: -29px;
+    }
+}

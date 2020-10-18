@@ -1,0 +1,408 @@
+include bemto/bemto.pug
+
+doctype html
+html
+  head(lang="ru")
+    include layout/__head
+  body.index
+  
+    .wrapper
+      include layout/__header
+
+      +b('main').main
+
+        +b('section').countries
+          .container
+
+            +e('ul').menu
+              li.all.active Все страны
+              li.culture Культура
+              li.extreme экстрим
+              li.climate атмосфера
+              li.people Люди
+
+            +e.wrap
+
+              .row
+                .col-12.col-lg-6
+                  .row
+                    +e.card-wrap.col-lg-6.col-sm-6.col-12 
+                      +b('article').card.all.culture
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-1.png')")
+                                +e('a').title(href="#") Cuba
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Cuba
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_1
+                                  +e('button').btn.js-btn-show#image-1(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Cuba
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_1
+                                  +e('button').btn.js-btn-play#video-1( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Cuba
+                          .swiper-button-next
+                          .swiper-button-prev
+                    +e.card-wrap.col-lg-6.col-sm-6.col-12 
+                      +b('article').card.all.culture.extreme
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/russia-img.png')")
+                                +e('a').title(href="#") Russia
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Russia
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_2
+                                  +e('button').btn.js-btn-show#image-2(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Russia
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_2
+                                  +e('button').btn.js-btn-play#video-2( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Russia
+                          .swiper-button-next
+                          .swiper-button-prev
+                    +e.card-wrap.col-lg-6.col-sm-6.col-12 
+                      +b('article').card.all.culture
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/england-img.png')")
+                                +e('a').title(href="#") England
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") England
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_3
+                                  +e('button').btn.js-btn-show#image-3(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") England
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_3
+                                  +e('button').btn.js-btn-play#video-3( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") England
+                          .swiper-button-next
+                          .swiper-button-prev
+                    +e.card-wrap.col-lg-6.col-sm-6.col-12 
+                      +b('article').card.all.extreme.climate
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/norway-img.png')")
+                                +e('a').title(href="#") Norway
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Norway
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_4
+                                  +e('button').btn.js-btn-show#image-4(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Norway
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_4
+                                  +e('button').btn.js-btn-play#video-4( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Norway
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-12.col-lg-6.order
+                  +b('article').big-card.card.all.culture
+                    +e.image-wrapper
+                      +e.image(style="background-image: url('img/latin-america-img.png')")
+                    +e('a').title(href="#") Latin America
+                    +e('ol').list-countries
+                      +e('li').country 
+                        +e('a').link(href="#") Honduras
+                      +e('li').country 
+                          +e('a').link(href="#") Columbia
+                      +e('li').country 
+                          +e('a').link(href="#") Panama
+                      +e('li').country 
+                          +e('a').link(href="#") Brazil
+                      +e('li').country 
+                          +e('a').link(href="#") Peru
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/switzerland-img.png')")
+                                +e('a').title(href="#") Switzerland
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Switzerland
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_5
+                                  +e('button').btn.js-btn-show#image-5(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Switzerland
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_5
+                                  +e('button').btn.js-btn-play#video-5( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Switzerland
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all.culture
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/china-img.png')")
+                                +e('a').title(href="#") China
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") China
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_6
+                                  +e('button').btn.js-btn-show#image-6(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") China
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_6
+                                  +e('button').btn.js-btn-play#video-6( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") China
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all.culture
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/germany-img.png')")
+                                +e('a').title(href="#") Germany
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Germany
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_7
+                                  +e('button').btn.js-btn-show#image-7(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Germany
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_7
+                                  +e('button').btn.js-btn-play#video-7( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Germany
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all.culture
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/japan-img.png')")
+                                +e('a').title(href="#") Japan
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Japan
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_8
+                                  +e('button').btn.js-btn-show#image-8(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Japan
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_8
+                                  +e('button').btn.js-btn-play#video-8( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Japan
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/australia-img.png')")
+                                +e('a').title(href="#") Australia
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Australia
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_9
+                                  +e('button').btn.js-btn-show#image-9(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Australia
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_9
+                                  +e('button').btn.js-btn-play#video-9( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Australia
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all.culture
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/india-img.png')")
+                                +e('a').title(href="#") India
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") India
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_10
+                                  +e('button').btn.js-btn-show#image-10(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") India
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_10
+                                  +e('button').btn.js-btn-play#video-10( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") India
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all.people
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/finland-img.png')")
+                                +e('a').title(href="#") Finland
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") Finland
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_11
+                                  +e('button').btn.js-btn-show#image-11(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") Finland
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_11
+                                  +e('button').btn.js-btn-play#video-11( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") Finland
+                          .swiper-button-next
+                          .swiper-button-prev
+                
+                +e.card-wrap.col-3.col-sm-6.col-12 
+                      +b('article').card.all.people
+                        .swiper-container.js-country
+                          .swiper-wrapper
+                            .swiper-slide
+                              +b.slide-1.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/new-zealand-img.png')")
+                                +e('a').title(href="#") New Zealand
+                            .swiper-slide
+                              +b.slide-2.slide
+                                +e.text Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!
+                                +e('a').title(href="#") New Zealand
+                            .swiper-slide
+                              +b.slide-3.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-2.png')")
+                                +e.btn-wrap.btn-wrap#image-gallery_12
+                                  +e('button').btn.js-btn-show#image-12(data-src="img/big-cuba-img-1.png")
+                                +e('a').title(href="#") New Zealand
+                            .swiper-slide
+                              +b.slide-4.slide
+                                +e.image-wrapper
+                                  +e.image(style="background-image: url('img/cuba-img-3.png')")
+                                +e.btn-wrap.btn-wrap#video-gallery_12
+                                  +e('button').btn.js-btn-play#video-12( data-src="https://www.youtube.com/watch?v=Pq9yPrLWMyU")
+                                +e('a').title(href="#") New Zealand
+                          .swiper-button-next
+                          .swiper-button-prev
+
+                
+
+
+      include layout/__footer
+       
+    include layout/__scripts
